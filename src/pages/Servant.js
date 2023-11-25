@@ -11,7 +11,7 @@ const Servant = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api.atlasacademy.io/export/NA/basic_servant.json');
+        const response = await axios.get('https://sparkling-elk-fedora.cyclic.app/api/servants');
         setServants(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);

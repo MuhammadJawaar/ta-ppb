@@ -16,7 +16,7 @@ const SplashScreen = () => {
           return;
         }
 
-        const response = await axios.get('https://api.atlasacademy.io/export/NA/basic_servant.json');
+        const response = await axios.get('https://sparkling-elk-fedora.cyclic.app/api/servants');
         const randomIndex = Math.floor(Math.random() * response.data.length);
         const randomServantData = response.data[randomIndex];
         setRandomServant(randomServantData);

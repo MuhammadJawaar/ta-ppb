@@ -16,7 +16,7 @@ const War = () => {
 
   const fetchWars = async (filter) => {
     try {
-      const response = await axios.get('https://api.atlasacademy.io/export/NA/nice_war.json');
+      const response = await axios.get('https://sparkling-elk-fedora.cyclic.app/api/war');
       // Filter the wars based on the selected filter
       const filteredWars = response.data.filter((war) => {
         if (filter === 'mainRecord') {
