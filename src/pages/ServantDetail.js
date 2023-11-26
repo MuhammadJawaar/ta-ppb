@@ -52,8 +52,8 @@ const ServantDetail = () => {
   ];
 
   return (
-    <div className="relative pt-14 h-screen">
-      <div className="text-center relative">
+    <div className="flex justify-center pt-14 h-auto">
+      <div className="text-center mb-5">
         <AscensionButtons
           onPrevClick={handlePrevAscension}
           onNextClick={handleNextAscension}
@@ -66,7 +66,7 @@ const ServantDetail = () => {
           alt={servantData.name}
           className="w-64 h-128 rounded-xl mx-auto mb-4"
         />
-        <div className="mt-4">
+        <div className="mt-4 pb-10">
           <table className="table-auto mx-auto">
             <tbody>
               {servantStats.map((stat, index) => (
